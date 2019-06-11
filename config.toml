@@ -5,6 +5,9 @@ theme = "cheli.ch"
 
 [params]
     description = "Für Obwaldä vo ObwaldnerInnen."
+    
+[params.icon]
+    url = "/images/logo.png"
 
 [menu]
 
