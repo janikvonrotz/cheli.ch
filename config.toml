@@ -1,0 +1,29 @@
+baseURL = "http://cheli.ch/"
+languageCode = "de-ch"
+title = "Cheli.ch"
+theme = "cheli.ch"
+
+[params]
+    description = "Für Obwaldä vo ObwaldnerInnen."
+
+[menu]
+
+    [[menu.main]]
+        name = "Cheli.ch"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        name = "Neuigkeiten"
+        url = "/post/"
+        weight = 2
+
+    [[menu.main]]
+        name = "Kalender"
+        url = "/event/"
+        weight = 3
+
+    [[menu.main]]
+        name = "Über"
+        url = "/page/über"
+        weight = 4
