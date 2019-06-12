@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": "cheli.ch",
     "builds": [
         {
             "src": "build.sh",
