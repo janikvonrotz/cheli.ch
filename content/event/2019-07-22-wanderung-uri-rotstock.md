@@ -10,7 +10,7 @@ weight: 92
 Datum: 22.07.2019 - 23.07.2019  
 Treffpunkt: [St. Jakob, Isenthal, Uri](https://map.geo.admin.ch/?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2682711&N=1195281&zoom=7&crosshair=marker) um 10:00 Uhr  
 Veranstalter: [Janik](https://wa.me/+41792656076) und Patrick  
-Teilnehmen via: [Whatsapp Gruppe](https://chat.whatsapp.com/ID)  
+Teilnehmen via: [Whatsapp Gruppe](https://chat.whatsapp.com/LPqlYnFYLJnJEb9yUzKk05)  
 
 Wir machen eine 2-Tages Wanderung auf den Uri Rotstock. 
 
