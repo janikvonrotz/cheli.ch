@@ -8,7 +8,7 @@ draft: true
 
 ![](/images/TEASER.jpg)
 
-Datum: 01.001.2019  
+Datum: 01.01.2019  
 Zeit: 00:00-00:00 Uhr  
 Wo: Bern, Länggassstrasse 86  
 Veranstalter: [Janik](https://wa.me/+41792656076)  
