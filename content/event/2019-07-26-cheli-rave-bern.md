@@ -5,7 +5,7 @@ event_date: 2019-07-26T15:03:25+02:00
 weight: 2
 ---
 
-![](/images/lightbulbs.jpg)
+![](/images/cheli rave bern.jpg)
 
 Datum: 26.07.2019  
 Wo: Bern, Länggassstrasse 86  
