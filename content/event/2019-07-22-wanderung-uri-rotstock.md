@@ -26,8 +26,13 @@ Nach dem Mittagessen geht es zurück nach St. Jakob.
 
 ![](/images/uri rotstock weg 2.png)
 
-**Achtung!:** Der Event findet nur statt sofern Platz in der Hütte ist und die Wetterverhältnisse gut sind.
+**Achtung!:** Der Event findet nur statt sofern Platz in der Hütte ist ✅ und die Wetterverhältnisse gut sind.
 
 ### Packliste
 
-Folgt...
+* Seidenschlafsack
+* Wanderschuhe
+* Snacks
+* Schnaps
+* Wasser
+* Gute Laune
