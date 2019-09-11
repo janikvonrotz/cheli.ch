@@ -2,3 +2,4 @@
 default.vim
 *.swp
 public
+.vscode/settings.json
