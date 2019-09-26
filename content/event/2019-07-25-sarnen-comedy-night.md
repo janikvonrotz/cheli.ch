@@ -2,7 +2,8 @@
 title: "Sarnen Comedy Night"
 date: 2019-06-27T00:17:29+02:00
 event_date: 2019-07-25T00:00:00+00:00
-weight: 95
+weight: 3
+draft: true
 ---
 
 ![](/images/sarnen comedy night.jpg)

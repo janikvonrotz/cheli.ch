@@ -2,7 +2,8 @@
 title: "2-Tages Wanderung Uri Rotstock"
 date: 2019-06-23T22:32:06+02:00
 event_date: 2019-07-22T00:00:00+00:00
-weight: 92
+weight: 2
+draft: true
 ---
 
 ![](/images/uri rotstock.jpg)

@@ -27,11 +27,6 @@ theme = "cheli.ch"
         weight = 3
 
     [[menu.main]]
-        name = "Gästebuch"
-        url = "/page/gästebuch/"
-        weight = 4
-
-    [[menu.main]]
         name = "Über"
         url = "/page/über"
         weight = 5
