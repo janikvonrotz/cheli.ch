@@ -1,0 +1,39 @@
+{{ define "main" -}}
+
+{{ with .Site.GetPage "/home" }}{{ .Content }}{{ end }}
+
+<br>
+
+<h1>Neuigkeiten:</h1>
+<div class="posts">
+    {{ range where .Data.Pages "Section" "post" }}
+        <br>
+        <article class="post">
+            <h3>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+            <p><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></p>
+            <p>{{ .Summary }}</p>
+            <p><a href="{{ .RelPermalink }}">Mehr lesen…</a></p>
+        </article>
+    {{- end }}
+</div>
+
+<br>
+
+<h1>Kalender:</h1>
+<div class="events">
+    {{ range where .Data.Pages "Section" "event" }}
+        <br>
+        <article class="event">
+            <h3>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+            <p><time datetime="{{ (.Params.event_date | time).Format "2006-01-02T15:04:05Z0700" }}">{{ (.Params.event_date | time).Format "Mon, Jan 2, 2006" }}</time></p>
+            <p><a href="{{ .RelPermalink }}">Details anzeigen…</a></p>
+            
+        </article>
+    {{- end }}
+</div>
+
+{{- end }}

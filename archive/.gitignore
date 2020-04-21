@@ -1,0 +1,5 @@
+.DS_Store
+default.vim
+*.swp
+public
+.vscode/settings.json

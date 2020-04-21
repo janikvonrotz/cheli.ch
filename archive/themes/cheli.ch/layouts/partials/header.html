@@ -1,0 +1,7 @@
+<header>
+    {{ range $i, $e := .Site.Menus.main }}
+        <a class="{{ if $i }}button{{ else }}logo{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+</header>
+<h2><small>{{ .Site.Params.Description }}</small></h2>
+<br>
