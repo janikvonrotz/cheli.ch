@@ -1,9 +1,0 @@
-{{ define "main" -}}
-<ul class="events">
-{{ range .Data.Pages -}}
-  <li>
-    <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time datetime="{{ (.Params.event_date | time).Format "2006-01-02T15:04:05Z0700" }}">{{ (.Params.event_date | time).Format "Mon, Jan 2, 2006" }}</time></span>
-  </li>
-{{- end }}
-</ul>
-{{- end }}
