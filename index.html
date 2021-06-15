@@ -5,14 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <title>30 Jahre Geburtstage Feiern</title>
 </head>
 <body>
     <h1>30 Jahre Geburtstage Feiern</h1>
-    <img src="./17.gif" /> <img src="./addit1.gif" /> <img src="./apply_logo2.gif" /> <img src="./atarilogo.gif" /> <img src="./blender.gif" /> <img src="./freencool.gif" /> <img src="./gb.gif" /> <img src="./gnu-linux.gif" />
     <img src="./einladung.png" />
-    <img src="./anybrowser3.gif" /> <img src="./aolsux.gif" /> <img src="./button3sea.gif" /> <img src="./china.gif" /> <img src="./deadlyprogramming.gif" /> <img src="./dream_coloured.gif" /> <img src="./humor5.gif" /> <img src="./ieexplode.gif" />
+    <p>Verschönere den Flyer mit diesen Gifs:</p>
+    <img class="draggable" src="./17.gif" /> <img class="draggable" src="./addit1.gif" /> <img class="draggable" src="./apply_logo2.gif" /> <img class="draggable" src="./atarilogo.gif" /> <img class="draggable" src="./blender.gif" /> <img class="draggable" src="./freencool.gif" /> <img class="draggable" src="./gb.gif" /> <img class="draggable" src="./gnu-linux.gif" />
+    <img class="draggable" src="./anybrowser3.gif" /> <img class="draggable" src="./aolsux.gif" /> <img class="draggable" src="./button3sea.gif" /> <img class="draggable" src="./china.gif" /> <img class="draggable" src="./deadlyprogramming.gif" /> <img class="draggable" src="./dream_coloured.gif" /> <img class="draggable" src="./humor5.gif" /> <img class="draggable" src="./ieexplode.gif" />
     <p>Kommst du auch? Sende eine Mail an: <a href="mailto:hi@janikv.ch">hi@janikv.ch</a> oder per <a href="https://wa.me/0041792656076">Whatsapp</a>.</p>
-    
+    <script>
+// target elements with the "draggable" class
+interact('.draggable')
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+
+    // enable autoScroll
+    autoScroll: true,
+
+    listeners: {
+      // call this function on every dragmove event
+      move: dragMoveListener,
+
+      // call this function on every dragend event
+      end (event) {
+        var textEl = event.target.querySelector('p')
+
+        textEl && (textEl.textContent =
+          'moved a distance of ' +
+          (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                     Math.pow(event.pageY - event.y0, 2) | 0))
+            .toFixed(2) + 'px')
+      }
+    }
+  })
+
+function dragMoveListener (event) {
+  var target = event.target
+  // keep the dragged position in the data-x/data-y attributes
+  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+
+  // translate the element
+  target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
+
+  // update the posiion attributes
+  target.setAttribute('data-x', x)
+  target.setAttribute('data-y', y)
+}
+
+// this function is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener
+    </script>
 </body>
 </html>
